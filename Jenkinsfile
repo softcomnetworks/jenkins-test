@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Building Applicaiton'
-        sh 'pip install -r requirements.txt'
+        sh 'pip install --user -r requirements.txt'
       }
     }
 
