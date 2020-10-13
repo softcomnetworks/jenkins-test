@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Building Applicaiton'
-        sh 'pip install --user -r requirements.txt'
+        sh 'sudo pip install -r requirements.txt'
       }
     }
 
@@ -26,8 +26,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    HOME = '${env.WORKSPACE}'
   }
 }
